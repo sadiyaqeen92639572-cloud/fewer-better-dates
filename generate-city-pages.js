@@ -289,7 +289,7 @@ function renderCityPage(city) {
     <span class="eyebrow">A different way to date</span>
     <h2>A different way to date is coming to ${esc(city.city)}.</h2>
     <p>8 Weeks. 6 Introductions. No Swiping. A small number of carefully selected introductions instead of an endless queue of profiles, built for people looking for a real relationship.</p>
-    <a href="#waitlist" class="btn">Join the early-access list</a>
+    <a href="#waitlist" class="btn">Join the first 100 members</a>
   </section>
 
   <section>
@@ -395,7 +395,7 @@ function renderCityPage(city) {
       </fieldset>
 
       <div class="submit-row">
-        <button type="submit" class="btn">Join the ${esc(city.city)} waitlist</button>
+        <button type="submit" class="btn">Join the first 100 members</button>
         <span class="fine">No spam. One email when founding memberships open.</span>
       </div>
     </form>
@@ -502,7 +502,7 @@ function renderHub(publishedCities) {
   </section>
 
   <footer>
-    <p>Fewer Better Dates is a founding waitlist for people who want fewer, better introductions instead of more swiping. <a href="../index.html#waitlist">Join the waitlist</a></p>
+    <p>Fewer Better Dates is a founding waitlist for people who want fewer, better introductions instead of more swiping. <a href="../index.html#waitlist">Join the first 100 members</a></p>
     <p style="margin-top:10px;font-size:14px;"><a href="../about/index.html" style="color:var(--text-faint);">About</a> · <a href="../privacy/index.html" style="color:var(--text-faint);">Privacy</a> · Published by Gesmine-Invest Limited</p>
   </footer>
 
