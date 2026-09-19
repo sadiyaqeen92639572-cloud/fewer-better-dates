@@ -1,0 +1,8 @@
+name = "fewer-better-dates"
+compatibility_date = "2026-09-18"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fewer-better-dates"
+database_id = "38357cb6-0284-4511-a282-2590e522262b"

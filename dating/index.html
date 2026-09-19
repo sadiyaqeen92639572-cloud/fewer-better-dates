@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dating by City</title>
+<meta name="description" content="How dating differs from one city to another — local guides with sourced, dated data on the single population, dating culture, and how people actually meet.">
+<link rel="canonical" href="https://fewerbetterdates.com/dating/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fewer Better Dates">
+<meta property="og:title" content="Dating by City">
+<meta property="og:description" content="How dating differs from one city to another — local guides with sourced, dated data on the single population, dating culture, and how people actually meet.">
+<meta property="og:url" content="https://fewerbetterdates.com/dating/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dating by City">
+<meta name="twitter:description" content="How dating differs from one city to another — local guides with sourced, dated data on the single population, dating culture, and how people actually meet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Fewer Better Dates","url":"https://fewerbetterdates.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fewer Better Dates","item":"https://fewerbetterdates.com/"},{"@type":"ListItem","position":2,"name":"Dating by city","item":"https://fewerbetterdates.com/dating/"}]}]}</script>
+<style>
+  :root{
+    --bg:#16121b;
+    --surface:#1f1926;
+    --surface-2:#271f30;
+    --line:rgba(244,237,228,0.10);
+    --line-strong:rgba(244,237,228,0.18);
+    --text:#f4ede4;
+    --text-dim:#b2a5b8;
+    --text-faint:#8b7f92;
+    --accent:#c8433f;
+    --accent-soft:rgba(200,67,63,0.16);
+    --accent-line:rgba(200,67,63,0.45);
+    --focus:#e0a15e;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Public Sans',system-ui,-apple-system,Segoe UI,sans-serif;
+    font-size:22px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    padding-inline:20px;
+  }
+  a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px;}
+  a:hover{color:#e0655f;}
+  img{max-width:100%;}
+  .wrap{max-width:640px;margin:0 auto;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',ui-monospace,monospace;
+    font-size:16px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--text-faint);
+  }
+  nav.top{padding-block:28px;display:flex;align-items:center;justify-content:space-between;}
+  nav.top a{font-family:'IBM Plex Mono',monospace;font-size:17px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);text-decoration:none;}
+  nav.top .back{color:var(--text-faint);}
+  nav.top .back:hover{color:var(--text-dim);}
+  h1{
+    font-family:'Fraunces',Georgia,serif;
+    font-style:italic;
+    font-weight:600;
+    font-size:clamp(42px,8.3vw,60px);
+    line-height:1.1;
+    text-wrap:balance;
+    margin:0;
+  }
+  header.hero{padding-block:20px 40px;display:flex;flex-direction:column;gap:16px;}
+  .dek{font-size:25px;color:var(--text-dim);max-width:52ch;margin:0;}
+  .meta-row{font-family:'IBM Plex Mono',monospace;font-size:16px;color:var(--text-faint);display:flex;gap:16px;flex-wrap:wrap;}
+  section{padding-block:6px;}
+  h2{
+    font-family:'Fraunces',Georgia,serif;
+    font-style:italic;
+    font-weight:500;
+    font-size:clamp(29px,5.2vw,35px);
+    line-height:1.25;
+    margin:40px 0 14px;
+    text-wrap:balance;
+  }
+  p{margin:0 0 18px;max-width:64ch;color:var(--text);}
+  p.dim{color:var(--text-dim);}
+  ul{margin:0 0 18px;padding-left:22px;max-width:60ch;}
+  li{margin-bottom:8px;color:var(--text-dim);}
+  strong{color:var(--text);}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:13px 24px;background:var(--accent);color:#fff8f2;
+    font-family:'Public Sans',sans-serif;font-weight:600;font-size:20px;
+    border:none;border-radius:2px;text-decoration:none;cursor:pointer;
+    width:fit-content;transition:background 0.15s ease, transform 0.15s ease;
+  }
+  .btn:hover{background:#d9524d;transform:translateY(-1px);color:#fff8f2;}
+  .btn:focus-visible{outline:2px solid var(--focus);outline-offset:3px;}
+  .stats-wrap{overflow-x:auto;margin:0 0 18px;}
+  table.stats{border-collapse:collapse;width:100%;min-width:420px;font-size:20px;}
+  table.stats th,table.stats td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);}
+  table.stats th{font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-faint);font-weight:500;}
+  table.stats td.val{color:var(--text);font-weight:600;}
+  table.stats td.yr{color:var(--text-faint);font-family:'IBM Plex Mono',monospace;font-size:16px;}
+  .meet-list{display:flex;flex-direction:column;gap:16px;margin:0 0 18px;}
+  .meet-item{padding:16px 0;border-top:1px solid var(--line);}
+  .meet-item:first-child{border-top:none;padding-top:0;}
+  .meet-item .meet-name{font-weight:700;color:var(--text);}
+  .meet-item .meet-type{font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.05em;text-transform:uppercase;color:var(--accent);margin-left:8px;}
+  .meet-item p{margin:6px 0 0;font-size:20px;}
+  .cta-card{
+    margin-top:44px;padding:28px;background:var(--surface);
+    border:1px solid var(--accent-line);border-radius:2px;
+    display:flex;flex-direction:column;gap:14px;
+  }
+  .cta-card .eyebrow{color:var(--accent);}
+  .cta-card h3{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:600;font-size:31px;margin:0;color:var(--text);}
+  .cta-card p{color:var(--text-dim);margin:0;}
+  .field{display:flex;flex-direction:column;gap:8px;}
+  .field label,fieldset legend{
+    font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.08em;
+    text-transform:uppercase;color:var(--text-faint);
+  }
+  fieldset{border:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
+  input[type="text"],input[type="email"],select{
+    background:var(--surface-2);border:1px solid var(--line-strong);border-radius:2px;
+    color:var(--text);font-family:'Public Sans',sans-serif;font-size:20px;padding:12px 14px;width:100%;
+  }
+  input::placeholder{color:var(--text-faint);}
+  input:focus-visible,select:focus-visible{outline:2px solid var(--focus);outline-offset:1px;}
+  select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--text-faint) 50%),linear-gradient(135deg,var(--text-faint) 50%,transparent 50%);background-position:calc(100% - 20px) center,calc(100% - 15px) center;background-size:5px 5px,5px 5px;background-repeat:no-repeat;}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media (max-width:480px){.row2{grid-template-columns:1fr;}}
+  .pill-group{display:flex;flex-wrap:wrap;gap:8px;}
+  .pill{position:relative;}
+  .pill input{position:absolute;opacity:0;width:1px;height:1px;}
+  .pill label{
+    display:inline-flex;align-items:center;padding:9px 14px;background:var(--surface-2);
+    border:1px solid var(--line-strong);border-radius:20px;font-family:'Public Sans',sans-serif;
+    font-size:18px;color:var(--text-dim);cursor:pointer;
+    transition:background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+  }
+  .pill input:checked + label{background:var(--accent-soft);border-color:var(--accent-line);color:var(--text);}
+  .pill input:focus-visible + label{outline:2px solid var(--focus);outline-offset:2px;}
+  .submit-row{display:flex;flex-direction:column;gap:10px;align-items:flex-start;padding-top:6px;}
+  .fine{font-size:17px;color:var(--text-faint);}
+  form{display:flex;flex-direction:column;gap:22px;margin-top:8px;}
+  form.hide{display:none;}
+  .confirm{
+    display:none;
+    background:var(--surface);
+    border:1px solid var(--accent-line);
+    border-radius:2px;
+    padding:22px;
+    margin-top:8px;
+    font-family:'Fraunces',Georgia,serif;
+    font-style:italic;
+    font-size:23px;
+    color:var(--text);
+  }
+  .confirm.show{display:block;}
+  footer{padding-block:44px 56px;border-top:1px solid var(--line);margin-top:48px;}
+  footer p{color:var(--text-faint);font-size:17px;max-width:56ch;}
+  .sources-list{margin:0;padding-left:18px;}
+  .sources-list li{font-size:17px;color:var(--text-faint);}
+  .hub-grid{display:flex;flex-direction:column;gap:8px;list-style:none;margin:0;padding:0;}
+  .hub-group{margin-bottom:28px;}
+  .hub-group h2{margin-top:0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="top">
+    <span class="eyebrow" style="color:var(--accent);">Fewer Better Dates</span>
+    <a class="back" href="../index.html">← Back to Fewer Better Dates</a>
+  </nav>
+
+  <header class="hero">
+    <span class="eyebrow">Local research</span>
+    <h1>Dating by City</h1>
+    <p class="dek">We're researching how dating differs from one city to another — from the size of the dating pool to how people actually meet.</p>
+  </header>
+
+  <section>
+    <p class="dim">Our city guides combine public demographic data, local research and original analysis. Statistics are dated and sourced where available. We only publish a city guide once we have enough real, verified local material — that's why this list is shorter than the number of cities we're actually looking at.</p>
+  </section>
+
+  <section>
+    
+    <div class="hub-group">
+      <span class="eyebrow">United Kingdom</span>
+      <ul class="hub-grid">
+        <li><a href="london/">Dating in London</a></li><li><a href="manchester/">Dating in Manchester</a></li><li><a href="norwich/">Dating in Norwich</a></li>
+      </ul>
+    </div>
+    
+    <div class="hub-group">
+      <span class="eyebrow">United States</span>
+      <ul class="hub-grid">
+        <li><a href="new-york/">Dating in New York</a></li><li><a href="atlanta/">Dating in Atlanta</a></li><li><a href="austin/">Dating in Austin</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">From the journal</span>
+    <p class="dim"><a href="../journal/why-is-dating-so-hard.html">Why Is Dating So Hard?</a> · <a href="../journal/why-am-i-still-single.html">Why Am I Still Single?</a> · <a href="../journal/how-to-find-love.html">How to Find Love</a></p>
+  </section>
+
+  <footer>
+    <p>Fewer Better Dates is a founding waitlist for people who want fewer, better introductions instead of more swiping. <a href="../index.html#waitlist">Join the waitlist →</a></p>
+    <p style="margin-top:10px;font-size:14px;"><a href="../about/index.html" style="color:var(--text-faint);">About</a> · <a href="../privacy/index.html" style="color:var(--text-faint);">Privacy</a> · Published by Gesmine-Invest Limited</p>
+  </footer>
+
+</div>
+</body>
+</html>

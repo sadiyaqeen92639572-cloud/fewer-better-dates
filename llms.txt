@@ -1,0 +1,46 @@
+# Fewer Better Dates
+
+> A founding waitlist testing demand for a slower, more intentional dating
+> experience: 8 weeks, 6 curated introductions, no swiping — instead of an
+> open-ended queue of profiles. Currently a demand test (waitlist + city
+> research), not a live matchmaking app.
+
+Published by Gesmine-Invest Limited (UK company 14120136).
+
+## Pages
+
+- /index.html — homepage, product pitch, waitlist signup form
+- /about/index.html — who publishes this, project stage, research methodology
+- /privacy/index.html — what waitlist data is collected and how it's stored
+- /journal/why-is-dating-so-hard.html — article on dating app fatigue
+- /journal/why-am-i-still-single.html — article on why intentional dating helps
+- /journal/how-to-find-love.html — article on how people actually meet partners
+- /dating/index.html — hub linking every published city guide
+- /dating/<city>/ — one local dating guide per city (see below)
+
+## City guides
+
+Each `/dating/<city>/` page combines: sourced, dated demographic stats
+(population, share of the population that is single, median age), a short
+locally-specific narrative on what dating is actually like there, 5-8 real
+currently-active local organisations for meeting people (running clubs,
+volunteering, community meetups — not a generic "join a class" list), a
+balanced take on whether the city suits serious dating, and a city-scoped
+waitlist form. Every stat has an inline source and date; a city is only
+published once it clears a content-quality gate (sourced population, single
+share and median age, a substantial narrative, at least 5 meet-ideas, at
+least 2 sources) — cities that don't clear it (currently Edinburgh, Chicago,
+Los Angeles) are left out rather than filled with a guess.
+
+Published: London, Manchester, Norwich (UK); New York, Atlanta, Austin (US).
+
+## Data notes
+
+- All population/demographic figures come from national statistics bodies
+  (UK: ONS; US: U.S. Census Bureau) or named published studies — never
+  estimated or invented.
+- "Single share" definitions differ slightly by country (UK: never-married
+  Census 2021 age 16+; US: ACS marital status table) — each figure links to
+  its exact source rather than presenting them as directly equivalent.
+- Atlanta's single-share figure is a metro-area statistic, disclosed as such
+  on that page — not a city-proper figure.
