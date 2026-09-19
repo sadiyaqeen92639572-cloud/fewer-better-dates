@@ -1,4 +1,4 @@
-// Cloudflare Pages Function — POST /api/waitlist
+// Cloudflare Pages Function: POST /api/waitlist
 // Binds a D1 database named DB (set in wrangler.toml / Pages dashboard).
 
 const ALLOWED_FIELDS = [

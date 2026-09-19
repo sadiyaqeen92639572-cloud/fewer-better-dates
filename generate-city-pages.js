@@ -3,7 +3,7 @@
 //
 // Publish gate: a city only ships if `publish === true` AND it clears the
 // automatic content-quality checks below. A city that fails is skipped and
-// logged — it must never crash the build, and must never appear in the
+// logged: it must never crash the build, and must never appear in the
 // sitemap.
 const fs = require('fs');
 const path = require('path');
@@ -213,7 +213,7 @@ function renderStatsTable(city) {
 }
 
 function renderSources(sources) {
-  return sources.map(s => `<li><a href="${esc(s.url)}">${esc(s.name)}</a> — accessed ${esc(s.accessed)}</li>`).join('');
+  return sources.map(s => `<li><a href="${esc(s.url)}">${esc(s.name)}</a> (accessed ${esc(s.accessed)})</li>`).join('');
 }
 
 function renderCityPage(city) {
@@ -244,7 +244,7 @@ function renderCityPage(city) {
     ]
   };
 
-  const metaDesc = `Real, sourced data on dating in ${city.city} — the local single population, how people actually meet, and a different approach for anyone looking for something serious.`;
+  const metaDesc = `Real, sourced data on dating in ${city.city}: the local single population, how people actually meet, and a different approach for anyone looking for something serious.`;
   const pageUrl = `${SITE_URL}/dating/${city.slug}/`;
 
   return `<!doctype html>
@@ -288,7 +288,7 @@ function renderCityPage(city) {
   <section>
     <span class="eyebrow">A different way to date</span>
     <h2>A different way to date is coming to ${esc(city.city)}.</h2>
-    <p>8 Weeks. 6 Introductions. No Swiping. A small number of carefully selected introductions instead of an endless queue of profiles — built for people looking for a real relationship.</p>
+    <p>8 Weeks. 6 Introductions. No Swiping. A small number of carefully selected introductions instead of an endless queue of profiles, built for people looking for a real relationship.</p>
     <a href="#waitlist" class="btn">Join the early-access list</a>
   </section>
 
@@ -303,7 +303,7 @@ function renderCityPage(city) {
   <section>
     <span class="eyebrow">How to actually meet someone here</span>
     <h2>Best ways to meet someone in ${esc(city.city)}</h2>
-    <p class="dim">Recurring, real, and checked recently — not a generic "try a class" list. Organisations and communities age better than restaurant recommendations, so that's what's here.</p>
+    <p class="dim">Recurring, real, and checked recently, not a generic "try a class" list. Organisations and communities age better than restaurant recommendations, so that's what's here.</p>
     <div class="meet-list">${renderMeetIdeas(city.meetIdeas)}</div>
   </section>
 
@@ -316,7 +316,7 @@ function renderCityPage(city) {
   <section id="waitlist">
     <span class="eyebrow">Join</span>
     <h2>Ready to try dating differently in ${esc(city.city)}?</h2>
-    <p class="dim">We're building this city by city. No commitment — join the early-access list and we'll let you know when ${esc(city.city)} founding memberships open.</p>
+    <p class="dim">We're building this city by city. No commitment: join the early-access list and we'll let you know when ${esc(city.city)} founding memberships open.</p>
 
     <form id="waitlist-form-${esc(city.slug)}" data-waitlist-form data-confirm-target="confirm-${esc(city.slug)}">
       <input type="hidden" name="city" value="${esc(city.city)}">
@@ -414,7 +414,7 @@ function renderCityPage(city) {
   </section>
 
   <footer>
-    <p>Fewer Better Dates is a founding waitlist for people who want fewer, better introductions instead of more swiping, building city by city. <a href="../index.html">See all city guides →</a></p>
+    <p>Fewer Better Dates is a founding waitlist for people who want fewer, better introductions instead of more swiping, building city by city. <a href="../index.html">See all city guides</a></p>
     <p style="margin-top:10px;font-size:14px;"><a href="../../about/index.html" style="color:var(--text-faint);">About</a> · <a href="../../privacy/index.html" style="color:var(--text-faint);">Privacy</a> · Published by Gesmine-Invest Limited</p>
   </footer>
 
@@ -456,17 +456,17 @@ function renderHub(publishedCities) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dating by City</title>
-<meta name="description" content="How dating differs from one city to another — local guides with sourced, dated data on the single population, dating culture, and how people actually meet.">
+<meta name="description" content="How dating differs from one city to another: local guides with sourced, dated data on the single population, dating culture, and how people actually meet.">
 <link rel="canonical" href="${SITE_URL}/dating/">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Fewer Better Dates">
 <meta property="og:title" content="Dating by City">
-<meta property="og:description" content="How dating differs from one city to another — local guides with sourced, dated data on the single population, dating culture, and how people actually meet.">
+<meta property="og:description" content="How dating differs from one city to another: local guides with sourced, dated data on the single population, dating culture, and how people actually meet.">
 <meta property="og:url" content="${SITE_URL}/dating/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dating by City">
-<meta name="twitter:description" content="How dating differs from one city to another — local guides with sourced, dated data on the single population, dating culture, and how people actually meet.">
+<meta name="twitter:description" content="How dating differs from one city to another: local guides with sourced, dated data on the single population, dating culture, and how people actually meet.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -484,11 +484,11 @@ function renderHub(publishedCities) {
   <header class="hero">
     <span class="eyebrow">Local research</span>
     <h1>Dating by City</h1>
-    <p class="dek">We're researching how dating differs from one city to another — from the size of the dating pool to how people actually meet.</p>
+    <p class="dek">We're researching how dating differs from one city to another, from the size of the dating pool to how people actually meet.</p>
   </header>
 
   <section>
-    <p class="dim">Our city guides combine public demographic data, local research and original analysis. Statistics are dated and sourced where available. We only publish a city guide once we have enough real, verified local material — that's why this list is shorter than the number of cities we're actually looking at.</p>
+    <p class="dim">Our city guides combine public demographic data, local research and original analysis. Statistics are dated and sourced where available. We only publish a city guide once we have enough real, verified local material, which is why this list is shorter than the number of cities we're actually looking at.</p>
   </section>
 
   <section>
@@ -502,7 +502,7 @@ function renderHub(publishedCities) {
   </section>
 
   <footer>
-    <p>Fewer Better Dates is a founding waitlist for people who want fewer, better introductions instead of more swiping. <a href="../index.html#waitlist">Join the waitlist →</a></p>
+    <p>Fewer Better Dates is a founding waitlist for people who want fewer, better introductions instead of more swiping. <a href="../index.html#waitlist">Join the waitlist</a></p>
     <p style="margin-top:10px;font-size:14px;"><a href="../about/index.html" style="color:var(--text-faint);">About</a> · <a href="../privacy/index.html" style="color:var(--text-faint);">Privacy</a> · Published by Gesmine-Invest Limited</p>
   </footer>
 

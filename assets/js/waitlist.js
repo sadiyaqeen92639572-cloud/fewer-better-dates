@@ -1,4 +1,4 @@
-// Shared waitlist form handler — Fewer Better Dates
+// Shared waitlist form handler for Fewer Better Dates
 // Wire any <form data-waitlist-form> to POST /api/waitlist as JSON.
 (function () {
   var params = new URLSearchParams(window.location.search);
