@@ -216,8 +216,14 @@ function renderSources(sources) {
   return sources.map(s => `<li><a href="${esc(s.url)}">${esc(s.name)}</a> (accessed ${esc(s.accessed)})</li>`).join('');
 }
 
+function renderMatchmakers(matchmakers) {
+  if (!matchmakers || !matchmakers.length) return '';
+  return matchmakers.map(m => `<li><strong>${esc(m.name)}</strong> (<a href="${esc(m.url)}">site</a>): ${esc(m.note)}</li>`).join('');
+}
+
 function renderCityPage(city) {
-  const title = `Dating in ${city.city}: The Local Dating Guide | Fewer Better Dates`;
+  const title = city.titleOverride || `Dating in ${city.city}: The Local Dating Guide | Fewer Better Dates`;
+  const h1 = city.h1Override || `Dating in ${city.city}`;
   const subhead = city.subhead || `What dating is actually like in ${city.city}, and a different approach for people looking for something serious.`;
   const dateCostLine = city.stats.costOfLivingNote
     ? `<p class="dim">${esc(city.stats.costOfLivingNote.value)} (${esc(city.stats.costOfLivingNote.source)}, ${esc(city.stats.costOfLivingNote.date)})</p>`
@@ -236,7 +242,7 @@ function renderCityPage(city) {
       },
       {
         '@type': 'Article',
-        headline: `Dating in ${city.city}`,
+        headline: h1,
         description: subhead,
         about: `Dating in ${city.city}`,
         publisher: { '@type': 'Organization', name: 'Gesmine-Invest Limited' }
@@ -244,7 +250,7 @@ function renderCityPage(city) {
     ]
   };
 
-  const metaDesc = `Real, sourced data on dating in ${city.city}: the local single population, how people actually meet, and a different approach for anyone looking for something serious.`;
+  const metaDesc = city.metaDescOverride || `Real, sourced data on dating in ${city.city}: the local single population, how people actually meet, and a different approach for anyone looking for something serious.`;
   const pageUrl = `${SITE_URL}/dating/${city.slug}/`;
 
   return `<!doctype html>
@@ -280,7 +286,7 @@ function renderCityPage(city) {
 
   <header class="hero">
     <span class="eyebrow">Dating by city · ${esc(city.country)}</span>
-    <h1>Dating in ${esc(city.city)}</h1>
+    <h1>${esc(h1)}</h1>
     <p class="dek">${esc(subhead)}</p>
     <div class="meta-row"><span>Local dating guide</span><span>Sourced &amp; dated data</span></div>
   </header>
@@ -306,6 +312,14 @@ function renderCityPage(city) {
     <p class="dim">Recurring, real, and checked recently, not a generic "try a class" list. Organisations and communities age better than restaurant recommendations, so that's what's here.</p>
     <div class="meet-list">${renderMeetIdeas(city.meetIdeas)}</div>
   </section>
+
+  ${city.matchmakers ? `<section>
+    <span class="eyebrow">Matchmakers in ${esc(city.city)}</span>
+    <h2>What a ${esc(city.city)} matchmaker actually costs</h2>
+    <p class="dim">If you've searched for a matchmaker in ${esc(city.city)}, here's the honest picture: most don't publish prices, and the ones that do run from a few thousand dollars to $15,000-30,000+ for high-touch packages. Worth knowing before you book a consultation.</p>
+    <ul class="sources-list">${renderMatchmakers(city.matchmakers)}</ul>
+    <p>We're not a matchmaking service and don't charge matchmaker prices. Fewer Better Dates is a structured introduction model, 6 introductions over 8 weeks, built for people who want the curation without the five-figure price tag.</p>
+  </section>` : ''}
 
   <section>
     <span class="eyebrow">The honest take</span>

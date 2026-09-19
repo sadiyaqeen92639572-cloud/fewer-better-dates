@@ -156,5 +156,41 @@ module.exports = [
       { name: 'U.S. Census Bureau QuickFacts: Austin city, Texas', url: 'https://www.census.gov/quickfacts/austincitytexas', accessed: '2026-09-18' },
       { name: 'SmartAsset: Where Most People Are Single or Married, 2024 Study', url: 'https://smartasset.com/data-studies/single-married-2024', accessed: '2026-09-18' }
     ]
+  },
+  {
+    slug: 'boston',
+    city: 'Boston',
+    country: 'US',
+    publish: true,
+    titleOverride: 'Matchmakers in Boston: What They Cost, and a Different Alternative | Fewer Better Dates',
+    h1Override: 'Matchmakers in Boston (and a Different Alternative)',
+    metaDescOverride: 'What Boston matchmaking services actually cost, real local names and pricing where published, plus a structured introduction alternative for people who want curation without the five-figure fee.',
+    stats: {
+      population: { value: '666,442', source: 'U.S. Census Bureau, ACS 2020-2024 5-year estimate (via Census Reporter)', date: '2020-2024 5-year' },
+      singleShare: { value: '55.4%', source: 'Boston Planning & Development Agency, "Boston At a Glance 2024," citing ACS 2018-2022 5-year estimates (never married, age 15+)', date: '2018-2022' },
+      medianAge: { value: '33.3', source: 'U.S. Census Bureau, ACS 2020-2024 5-year estimate (via Census Reporter)', date: '2020-2024 5-year' }
+    },
+    subhead: 'Boston matchmakers rarely publish their prices. Here\'s what they actually charge, and a different way to get curated introductions.',
+    landscapeNote: 'Boston is one of the most college-dense cities in the country: the metro area holds 100+ colleges and universities and roughly 250,000 students, about a third of the state\'s entire college enrollment packed into a city that\'s only a tenth of its population. That produces a dating pool skewed young and constantly turning over, as undergrads graduate and grad students finish two-year programs, rather than one that accumulates settled daters over time. Combined with a 55.4% never-married rate and a median age of 33.3, it reads less like a stable adult dating market and more like a rotating one, which is exactly the gap high-touch matchmakers have built a business filling.',
+    meetIdeas: [
+      { name: 'November Project (Boston)', type: 'Free fitness movement', url: 'https://november-project.com/category/boston/', checkedAt: '2026-09-19', text: 'Founded in Boston in 2011: free, volunteer-run workouts (Harvard Stadium stairs Wednesdays, Summit Ave hill Fridays) with a genuinely recurring regular crowd.' },
+      { name: 'Boston Ski & Sports Club', type: 'Adult sports league', url: 'https://www.bssc.com/sports/', checkedAt: '2026-09-19', text: 'Greater Boston\'s largest adult league operator, kickball to volleyball to ski trips: a season-long team structure creates repeat contact, not a one-off.' },
+      { name: 'AMC Boston Young Members (20s & 30s)', type: 'Outdoors/hiking club', url: 'https://ym.amcboston.org/', checkedAt: '2026-09-19', text: 'Long-running Appalachian Mountain Club chapter aimed at 20s/30s: day hikes, backpacking and kayaking with a built-in social calendar.' },
+      { name: 'Boston Cares', type: 'Volunteering network', url: 'https://www.bostoncares.org/', checkedAt: '2026-09-19', text: 'New England\'s largest volunteer agency, 20,000+ shifts a year across 150+ nonprofits: team-based volunteering is a low-pressure way to meet people repeatedly.' },
+      { name: 'Simply Social Sports (S3 Boston)', type: 'Adult sports league', url: 'https://www.meetup.com/s3boston/', checkedAt: '2026-09-19', text: 'Explicitly framed as casual and social first, sport second: a lighter entry point than a competitive league.' },
+      { name: 'TrailblazHers Run Co. / Boston Latina Run Club', type: 'Identity-based run clubs', url: 'https://www.bostonmagazine.com/health/run-clubs-in-boston/', checkedAt: '2026-09-19', text: 'A cluster of identity- and neighbourhood-based social run clubs, good if you want community built around a specific affinity rather than a generic league.' }
+    ],
+    matchmakers: [
+      { name: 'Susie Q Matchmaking', url: 'https://www.susieqmatchmaking.com/', note: 'Boston-based since 2014. Doesn\'t publish prices; third-party reviews cite $6,900-$15,000 for standard packages, $30,000+ for VIP.' },
+      { name: 'LunchDates', url: 'https://www.lunchdates.com/', note: '40-year-old Boston service with tiered membership. No dollar figures published; third-party estimates put entry packages around $3,000+.' },
+      { name: 'With You Matchmaking', url: 'https://withyoumatchmaking.com/', note: 'Run by a Somerville-based "community matchmaker" with a larger client list, positioned as lower-cost than boutique firms. No published pricing.' },
+      { name: 'Boston Single Mingle', url: 'https://www.bostonsinglemingle.com/', note: 'Combines singles events with matchmaking and coaching; candidates are screened in person before matching. No published pricing.' }
+    ],
+    seriousDatingTake: 'Mixed. Boston has a huge, well-educated, career-oriented single population and compact geography that makes dating logistically easy. But the student and transient skew means a real chunk of the pool is inherently short-term, here for a degree or a two-year rotation before moving on, so the numbers favour volume more than long-term intent. Boston also has a reputation, frequently discussed locally, for being slower to warm up to strangers than other big cities. A matchmaker can filter for intent at a price; the alternative is doing that filtering yourself, or using a structured introduction service that does some of it for less.',
+    sources: [
+      { name: 'U.S. Census Bureau via Census Reporter: Boston, MA profile', url: 'http://censusreporter.org/profiles/16000US2507000-boston-ma/', accessed: '2026-09-19' },
+      { name: 'Boston Planning & Development Agency: Boston At a Glance 2024', url: 'https://www.bostonplans.org/documents/research/population-and-demographics/2024/boston-at-a-glance-2024', accessed: '2026-09-19' },
+      { name: 'Boston Planning & Development Agency: Boston By the Numbers, Colleges and Universities', url: 'https://www.bostonplans.org/getattachment/1770c181-7878-47ab-892f-84baca828bf3', accessed: '2026-09-19' }
+    ]
   }
 ];
